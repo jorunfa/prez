@@ -36,7 +36,7 @@ FocusWidget = {
 	bindUIActions: function() {
 		s.toggleFocus.click(function() {
 			FocusWidget.toggleFocusClassBetweenInitialAndFocusElement();
-			FocusWidget.notifyTogling();
+			FocusWidget.notifyToggling();
 		});
 	},
 
@@ -44,7 +44,7 @@ FocusWidget = {
 		s.initialFocus.toggleClass(s.focusClass);
 	},
 
-	notifyTogling: function() {
+	notifyToggling: function() {
 		s.outputField.append(s.focusChangedMsg);
 	}
 
