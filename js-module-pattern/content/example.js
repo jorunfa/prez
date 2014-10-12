@@ -42,6 +42,7 @@ FocusWidget = {
 
 	toggleFocusClassBetweenInitialAndFocusElement: function() {
 		s.initialFocus.toggleClass(s.focusClass);
+		s.toggleFocus.toggleClass(s.focusClass);
 	},
 
 	notifyToggling: function() {
