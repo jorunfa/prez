@@ -54,8 +54,7 @@
           <h4>Kjenner du igjen kode sånn som dette?</h4>
           <figure>
             <pre>
-              <code>
-$(document).ready(function () {
+              <code>$(document).ready(function () {
   $('#aDiv').toggleClass("focus");
 
   $('#anotherDiv').ready(function () {
@@ -69,8 +68,7 @@ $(document).ready(function () {
     }
   });
 
-});
-              </code>
+});</code>
             </pre>
             <figcaption>Se så trist kode. Jeg ble lei meg. Ble du?</figcaption>
           </figure>
@@ -85,33 +83,28 @@ $(document).ready(function () {
         </section>
         <section>
           <figure>
-            <pre><code>
-var NewsWidget = {
+            <pre><code>var NewsWidget = {
 
-};
-            </code></pre>
+};</code></pre>
             <figcaption>Enkelt nok.</figcaption>
           </figure>
         </section>
         <section>
           <figure>
-            <pre><code class="js">
-var NewsWidget = {
+            <pre><code class="js">var NewsWidget = {
 
   settings: {
     numArticles: 5,
     articleList: $("#article-list")
   }
 
-};
-            </code></pre>
+};</code></pre>
             <figcaption>Settings til våre nyheter.</figcaption>
           </figure>
         </section>
         <section>
           <figure>
-            <pre><code>
-var s,
+            <pre><code>var s,
 NewsWidget = {
 
   settings: {
@@ -125,16 +118,14 @@ NewsWidget = {
     s = this.settings;
   }
 
-};
-            </code></pre>
+};</code></pre>
           </figure>
           <figcaption>init: der ting starter å skje. Ett sted.</figcaption>
         </section>
 
         <section>
           <figure>
-            <pre><code>
-var s,
+            <pre><code>var s,
 NewsWidget = {
 
   settings: {
@@ -159,28 +150,24 @@ NewsWidget = {
     // using numToGet as param
   }
 
-};
-            </code></pre>
+};</code></pre>
             <figcaption>Så kan vi binde opp UI-elementer til handlinger.</figcaption>
           </figure>
         </section>
 
         <section>
           <figure>
-            <pre><code>
-(function() {
+            <pre><code>(function() {
 
   NewsWidget.init();
 
   SomeOtherModule.init();
 
-})();
-            </code></pre>
+})();</code></pre>
             <figcaption>Vår global.js fil. init fest.</figcaption>
           </figure>
           <figure>
-            <pre><code class="html" contenteditable>
-&lt;!doctype html&gt;
+            <pre><code class="html" contenteditable>&lt;!doctype html&gt;
 &lt;html&gt;
 &lt;head&gt;
   &lt;script src="js/NewsWidget.js"&gt;&lt;/script&gt;
@@ -188,8 +175,7 @@ NewsWidget = {
   &lt;script src="js/global.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  <!-- ... -->
-            </code></pre>
+  <!-- ... --></code></pre>
             <figcaption>Må seff få inn filene i prosjektet på et vis.</figcaption>
           </figure>
         </section>
@@ -198,8 +184,7 @@ NewsWidget = {
           <h2>Så hva med denne triste greia?</h2>
           <figure>
             <pre>
-              <code>
-$(document).ready(function () {
+              <code>$(document).ready(function () {
   $('#aDiv').toggleClass("focus");
 
   $('#anotherDiv').ready(function () {
@@ -213,8 +198,7 @@ $(document).ready(function () {
     }
   });
 
-});
-              </code>
+});</code>
             </pre>
           </figure>
           <figcaption>Kunne vi gjort dette bedre og mer leselig?</figcaption>
@@ -231,8 +215,7 @@ $(document).ready(function () {
         <section>
           <figure>
             <h3>Sånn</h3>
-            <pre><code>
-var s,
+            <pre><code>var s,
 FocusWidget = {
   
   settings: {
@@ -264,8 +247,7 @@ FocusWidget = {
     s.outputField.append(s.focusChangedMsg);
   }
 
-};
-            </code></pre>
+};</code></pre>
           </figure>
         </section>
 
